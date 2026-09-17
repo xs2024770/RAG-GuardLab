@@ -23,7 +23,10 @@
 | 测试阶段 | 模型 | ASR（攻击成功率） | 备注 |
 | :--- | :--- | :--- | :--- |
 | **基线测试** | Qwen2-7B | **20.0%** | 角色劫持攻击成功，模型输出了 CANARY 标识码 |
+<img width="1918" height="1078" alt="attack_result" src="https://github.com/user-attachments/assets/0366cc52-2c99-42bb-afd3-357d51d3d587" />
+
 | **防御测试** | Qwen2-1.5B | **0.0%** | 启用指令隔离与输出过滤后，成功拦截注入 |
+<img width="1918" height="1051" alt="defense_result" src="https://github.com/user-attachments/assets/f7374baf-f5e9-49cf-b538-b1069e63d8ca" />
 
 > **工程发现**：本地环境（8GB 显存）无法支持 7B 模型推理，实测中通过 `OLLAMA_NO_CUDA=1` 强制走 CPU 跑通全流程。模型规模越小，对复杂注入指令的“天然免疫力”越强，体现了模型能力与安全风险的博弈。
 
