@@ -1,6 +1,6 @@
 # RAG-GuardLab 🛡️
 
-![RAG-GuardLab 架构图]
+## [RAG-GuardLab 架构图]
 
 <img width="1753" height="807" alt="RAG" src="https://github.com/user-attachments/assets/a8b7d11e-68b7-4ee2-a2ba-ff7c747c871a" />
 
