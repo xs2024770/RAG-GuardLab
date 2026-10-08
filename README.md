@@ -39,6 +39,7 @@
     <td align="center"><b>防御测试 (ASR = 0%)</b></td>
   </tr>
 </table>
+
 ## 🛡️ 防御策略
 1. **指令隔离（Prompt Isolation）**：在 System Prompt 中明确标注检索材料为“不可信数据”，强制忽略材料中的指令。
 2. **输出过滤（Output Filtering）**：对生成结果进行后处理，检测到 Canary 标识码或敏感词立即拦截。
